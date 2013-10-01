@@ -1,7 +1,7 @@
 About
 =====
 
-Extractor library provides automatic extraction of repeated entities on web pages.
+Extractor library provides automatic extraction of repeated entities (sequence of HTML tags) on web pages.
 
 The library can be used as follows (see *tests* folder):
 ::
@@ -56,11 +56,11 @@ The output should be something like:
 	29.  Rubber Ducky Logs (jamie-wong.com)  19 points by phleet 3 hours ago  | 6 comments
 	30.  Challenging the Bing It On Challenge (freakonomics.com)  89 points by msrpotus 2 hours ago  | 40 comments
 
-In this context cluster represents a group of repeated entities / units. 
+Cluster represents a group of repeated entities / units. 
 Each unit in a cluster contains the same set of HTML tags and has the following attributes:
 
 * level information (how deep in the HTML structure it is)
-* type (type 0 - all tags are of the same depth, type 1 - tags are of the two different levels - parents and their children one level below)
+* type (type 0 - all tags are of the same depth; type 1 - tags are of the two different levels - parents and their children one level below)
 * pattern (for example *tr td td* - the sequence of HTML tags that was found to be repeated)
 * parent_tag_indices (indices of the tags which are parents)
 * irregular (if True, the unit's pattern is slightly different from the others in cluster, but it appears to be of the very similar structure - for example a cluster of articles might contain one article which doesn't have an image, while the others have it (it lacks the *img* tag) - however, the algorithm doesn't work well if the sequence contains more irregularities)
@@ -69,7 +69,7 @@ The code above finds two clusters - the second one is the one that contains actu
 the first one is to be ignored (just two occurrences of *tr td tr* pattern which do not represent any meaningful 
 entities on the web page).
 Usually, some such meaningless clusters appear - 
-but it is up to the programmer to filter out the unneeded clusters.
+it is up to the programmer to filter out the unneeded clusters.
 Frequently, some clusters related to web page menus appear too.
 
 Another example might be extracting news from DZone:
