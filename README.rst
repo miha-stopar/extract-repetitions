@@ -14,7 +14,6 @@ The library can be used as follows (see *tests* folder):
 	
 	print "clusters: %s" % len(clusters)
 	for label, units in clusters.iteritems():
-	    print "------------------------------------------------------------------"
 	    print "%s : %s" % (label, len(units))
 	    if len(units) == 30: # 30 news articles on the page
 	        for u in units:
@@ -26,37 +25,36 @@ The output should be something like:
 	clusters: 2
 	6 tr td tr : 2
 	9 tr td td td tr td td tr : 30
-	1.  Joblint: test tech jobs for sexism, culture, expectations, and recruiter fails (github.com)  80 points by rowanmanning 1 hour ago  | 35 comments
-	2.  Programming is Terrible (pastebin.com)  60 points by ibadeyes 2 hours ago  | 37 comments
-	3.  Tessel: The end of web development as we know it (slideshare.net)  338 points by Frijol 9 hours ago  | 261 comments
-	4.  How to get bias into a Wikipedia article (wikipedia.org)  120 points by dmerfield 6 hours ago  | 46 comments
-	5.  Researchers Develop Method for Getting High-Quality Photos from Crappy Lenses (petapixel.com)  89 points by Xcelerate 6 hours ago  | 31 comments
-	6.  App Store Pricing: Worth Less than a Cup of Coffee (floriankugler.com)  9 points by floriankugler 1 hour ago  | discuss
-	7.  A negative captcha (github.com)  117 points by capex 8 hours ago  | 67 comments
-	8.  16-Year Old Arrested Over World’s Biggest Cyber Attack (blog.insecure.in)  16 points by i-hacker 2 hours ago  | 7 comments
-	9.  How the FBI found Miss Teen USA’s webcam spy (wired.co.uk)  8 points by r0h1n 1 hour ago  | 3 comments
-	10.  Free HTML Starter Templates for Bootstrap (startbootstrap.com)  363 points by jalan 17 hours ago  | 73 comments
-	11.  Procrastination should be solved by lighting fires, not filling buckets (visakanv.com)  14 points by visakanv 2 hours ago  | 1 comment
-	12.  The Indian and his insatiable appetite for the college degree (medium.com)  67 points by stephenhacking 6 hours ago  | 56 comments
-	13.  Gartner tells IT shops that it's 'game over' for BlackBerry (computerworld.com)  15 points by josteink 3 hours ago  | 21 comments
-	14.  Turns mailto links into clean contact forms (squaresend.com)  27 points by cmstoken 5 hours ago  | 18 comments
-	15.  Devopsdays TLV livestream (livestream.com)  7 points by rantav 1 hour ago  | 1 comment
-	16.  An electric superbike (mission-motorcycles.com)  13 points by kvprashant 3 hours ago  | 11 comments
-	17.  Newly Declassified Documents Show How the Surveillance State was Born (newrepublic.com)  143 points by tokenadult 13 hours ago  | 25 comments
-	18.  Freelan - an open-source, multi-platform, peer-to-peer VPN software (freelan.org)  130 points by bowyakka 14 hours ago  | 59 comments
-	19.  What I Wish I Knew Before Studying Computer Security in College (matthewdfuller.com)  70 points by cddotdotslash 10 hours ago  | 49 comments
-	20.  Pudb – A full-screen, console-based Python debugger (python.org)  92 points by hartror 13 hours ago  | 22 comments
-	21.  Going long long on time_t (openbsd.org)  110 points by hebz0rl 15 hours ago  | 63 comments
-	22.  Judge tosses Apple motion, allows patent troll Lodsys to continue rampage (arstechnica.com)  154 points by protomyth 18 hours ago  | 100 comments
-	23.  SpaceX Launch - Official Webcast (spacex.com)  224 points by nkoren 22 hours ago  | 143 comments
-	24.  How to write a crawler (emanueleminotto.it)  104 points by EmanueleMinotto 16 hours ago  | 23 comments
-	25.  Data-Processing Frameworks Benchmark: Redshift, Hive, Shark, Impala (berkeley.edu)  83 points by ceyhunkazel 16 hours ago  | 14 comments
-	26.  Bitcoin is Worse is Better (gwern.net)  134 points by gwern 20 hours ago  | 38 comments
-	27.  Day 180: Finished (jenniferdewalt.com)  337 points by wallflower 1 day ago  | 84 comments
-	28.  Create diagrams in the browser (draw.io)  211 points by gpsarakis 1 day ago  | 41 comments
-	29.  Why Free Software Is More Important Now Than Ever Before (wired.com)  360 points by hexis 1 day ago  | 264 comments
-	30.  What is the theoretical limit of information density? (stackexchange.com)  55 points by lpage 15 hours ago  | 30 comments
-
+	1.  A 3D printed toothbrush for all your teeth (3ders.org)  121 points by jschwartz11 1 hour ago  | 64 comments
+	2.  Fingerprints are Usernames, not Passwords (dustinkirkland.com)  57 points by jcastro 1 hour ago  | 20 comments
+	3.  How traffic actually works (jliszka.github.io)  125 points by jliszka 3 hours ago  | 99 comments
+	4.  Monitor your Website’s Uptime with Google Docs (labnol.org)  115 points by blueatlas 3 hours ago  | 32 comments
+	5.  The Six Stages of Debugging (2012) (plasmasturm.org)  41 points by wodow 2 hours ago  | 4 comments
+	6.  D3.js: How to handle dynamic JSON Data (pothibo.com)  100 points by pothibo 4 hours ago  | 11 comments
+	7.  Rethinking Agile in an office-less world (37signals.com)  27 points by mh_ 1 hour ago  | 13 comments
+	8.  Write less (getnashty.com)  28 points by bgnm2000 1 hour ago  | 24 comments
+	9.  Computational Synesthesia: Audio Analysis with Image Processing Algorithms (minardi.org)  57 points by doctoboggan 3 hours ago  | 14 comments
+	10.  Show HN: Ridiculously fast and responsive notetaking meets semantic search (hiroapp.com)  8 points by sushimako 10 minutes ago  | discuss
+	11.  JavaScript Allongé is free (braythwayt.com)  76 points by raganwald 4 hours ago  | 31 comments
+	12.  Easing Functions Cheat Sheet (easings.net)  40 points by bpierre 2 hours ago  | 11 comments
+	13.  Firefox fixes save gigabytes of memory on image-heavy pages (mozilla.org)  295 points by AndrewDucker 10 hours ago  | 101 comments
+	14.  Conscientiousness and online education (gwern.net)  48 points by gwern 3 hours ago  | 17 comments
+	15.  Ask HN: Who is hiring? (October 2013)  249 points by whoishiring 5 hours ago  | 330 comments
+	16.  Goodbye Wholesale Brands (jamiequint.com)  25 points by jamiequint 2 hours ago  | 10 comments
+	17.  Using ElasticSearch and Logstash to Serve Billions of Searchable Events (elasticsearch.org)  26 points by twakefield 2 hours ago  | 16 comments
+	18.  Show HN: Anomalous – Real-time monitoring for servers, applications, and logs (getanomalous.com)  29 points by toddpersen 2 hours ago  | 19 comments
+	19.  Why we use Balanced for payments. (apixchange.com)  15 points by jsonne 1 hour ago  | 4 comments
+	20.  Unicorns at GitHub (github.com)  22 points by lukashed 1 hour ago  | 22 comments
+	21.  Ruby Association: ruby-lang.org Design Contest (ruby.or.jp)  13 points by jgnatch 1 hour ago  | 5 comments
+	22.  Scribd Challenges Amazon and Apple With ‘Netflix for Books’ (wired.com)  46 points by gotosleep 4 hours ago  | 29 comments
+	23.  Memory – Part 4: Intersec’s custom allocators (intersec.com)  106 points by fruneau 8 hours ago  | 45 comments
+	24.  Google Web Designer (google.com)  1010 points by jaysonlane 1 day ago  | 412 comments
+	25.  AngelList – Do Or Do Not, There is No Try (foundrygroup.com)  43 points by elias12 5 hours ago  | 2 comments
+	26.  A case for something, anything more simple than WordPress (getbarley.com)  20 points by cdevroe 3 hours ago  | 20 comments
+	27.  Lego Calendar syncs with Google Calendar (creativeapplications.net)  86 points by thecosas 7 hours ago  | 20 comments
+	28.  Naked mole rats have more than one weapon against aging (nationalgeographic.com)  59 points by bane 5 hours ago  | 11 comments
+	29.  Rubber Ducky Logs (jamie-wong.com)  19 points by phleet 3 hours ago  | 6 comments
+	30.  Challenging the Bing It On Challenge (freakonomics.com)  89 points by msrpotus 2 hours ago  | 40 comments
 
 In this context cluster represents a group of repeated entities / units. 
 Each unit in a cluster contains the same set of HTML tags and has the following attributes:
@@ -85,7 +83,6 @@ Another example might be extracting news from DZone:
 	
 	print "clusters: %s" % len(clusters)
 	for label, units in clusters.iteritems():
-	    print "------------------------------------------------------------------"
 	    print "%s : %s" % (label, len(units))
 	    if len(units) == 25:
 	        for u in units:
@@ -95,34 +92,32 @@ Another example might be extracting news from DZone:
 Here we receive even more clusters, however, among them there is one with actual news:
 ::
 
-	------------------------------------------------------------------
-	6 a div div div div div : 25
-	4  0   What’s new for ALM in Visual Studio 2013 and Team Foundation Server 2013        martinig vi
-	5  0   Applying machine learning to improve your algos        ivom2gi via plumbr.eu    Promoted: Oct
-	5  0   Extreme Reality SDK open to all Developers        mannt8 via iapplehow.com    Promoted: Oct 0
-	10  0   JavaOne 2013 - Mark Reinhold explains Lambda in Java Technical keynote        markee174 via 
-	10  1   10 Web Development Tools for Developers        gavin_dm via codegeekz.com    Promoted: Oct 0
-	9  0   Apple Releases iOS 7.0.2 To Fix a pair of Screen Security Bugs        Kaostricks12 via iapple
-	11  0   59 Hilarious but True Programming Quotes for Software Developers         garibbu via theprof
-	6  1   Programming languages for web development        sbp_romania via sbp-romania.com    Promoted:
-	5  0   5 ways devops can benefit IT        vcmilazzo via networkworld.com    Promoted: Oct 01 / 03:1
-	6  0   How Google Converted Language Translation Into a Problem of Vector Space Mathematics        d
-	6  0   Codenvy’s Architecture, Part 1        piccoloprincipe via infoq.com    Promoted: Oct 01 / 0
-	8  0   How to extend enum in Java        Yifan Peng via blog.pengyifan.com    Promoted: Oct 01 / 03:
-	7  0   draw.io        dotCore via draw.io    Promoted: Oct 01 / 02:48.
-	9  0   How to Improve your WordPress Website for SEO        rajyog via thedesignblitz.com    Promote
-	5  0   Add Recommendation Engine in your Ecommerce website with Ruby Backend APIs         vickytambu
-	6  0   Intuitiveness Has a New Meaning in Terms of App Design        amicrux via bloggerspath.com   
-	9  0   10 Useful WordPress Plugins for Customer Engagement        gavin_dm via webtoolsdepot.com    
-	17  0   10 Best CSS Frameworks Which Developers Must Use For Faster Development        smith.steve13
-	16  0   10+ Great Web Design Tools Which Designers Should Have In Their Toolbox        smith.steve13
-	16  0   8 Must Have Tools For Web Developers to Test and Compare Website Loading Time        crazydz
-	7  0   Simplified Releases to the Central Repository with Nexus        mosabua via blog.sonatype.com
-	11  0   WordPress 3.6 – Six Useful Hacks that You Still Need        ialisavitti via designfloat.co
-	8  0   Idiot's guide to Entity Framework by an idiot        meese200 via blogs.windward.net    Promo
-	7  0   AutoCAD DXF Files Reading &amp; Conversion to PDF, Read/Edit Image EXIF Data        sheraz786
-	4  0   JavaRoots: How to Set Default Schema In Oracle Using Commons DBCP        somaniab via javaroo
-  
+	div div div div div : 25
+	5  0   Add Geolocation feature in your Windows Mobile App        vickytambule via api.shephertz.com 
+	6  0   Pro T-SQL 2012 Programmer’s Guide        Kaostricks12 via i-programmer.info    Promoted: Oc
+	9  0   Git + Dropbox, The Easy Way        piccoloprincipe via nosleep.ca    Promoted: Oct 01 / 10:37
+	6  0   80+ Best jQuery Plugin &amp; Tutorial with Demo of September 2013        sanchitsoni via jque
+	12  0   The 10x developer is NOT a myth        dotCore via brikis98.blogspot.com    Promoted: Oct 01
+	4  0   World’s Smallest NoSQL Database: Persistent Data        mitchp via architects.dzone.com    
+	4  0   JVM Toolkit &quot;Ratpack&quot; and Neo4j        mitchp via java.dzone.com    Promoted: Oct 0
+	4  0   Aggregation Vs Composition Vs Association        swetagupta via guruzon.com    Promoted: Oct 
+	5  0   Ripple is officially open-source!        dotCore via ripple.com    Promoted: Oct 01 / 08:49.
+	5  0   A quick post about depression and software development        mswatcher via tosbourn.com    P
+	3  1   Menus with Apache Digester        mitchp via java.dzone.com    Promoted: Oct 01 / 08:49.
+	4  0   Making HTTPs Requests in Ruby &amp; JavaScript w/ Node.js        mitchp via ruby.dzone.com   
+	3  0   OpenStack: The Community Today        mitchp via architects.dzone.com    Promoted: Oct 01 / 0
+	3  0   Software Defined (In-) Security        mitchp via server.dzone.com    Promoted: Oct 01 / 08:4
+	6  0   Migrating Real-World Million-Line Code Bases to Java 7        martinig via java-tv.com    Pro
+	5  0   What’s new for ALM in Visual Studio 2013 and Team Foundation Server 2013        martinig vi
+	7  0   Applying machine learning to improve your algos        ivom2gi via plumbr.eu    Promoted: Oct
+	7  0   Extreme Reality SDK open to all Developers        mannt8 via iapplehow.com    Promoted: Oct 0
+	12  0   JavaOne 2013 - Mark Reinhold explains Lambda in Java Technical keynote        markee174 via 
+	12  1   10 Web Development Tools for Developers        gavin_dm via codegeekz.com    Promoted: Oct 0
+	11  0   Apple Releases iOS 7.0.2 To Fix a pair of Screen Security Bugs        Kaostricks12 via iappl
+	17  0   59 Hilarious but True Programming Quotes for Software Developers        garibbu via theprofe
+	7  1   Programming languages for web development        sbp_romania via sbp-romania.com    Promoted:
+	6  0   5 ways devops can benefit IT        vcmilazzo via networkworld.com    Promoted: Oct 01 / 03:1
+	7  0   How Google Converted Language Translation Into a Problem of Vector Space Mathematics        
 
 Algorithm
 ======
@@ -138,7 +133,7 @@ Install
 
 ::
 
-	pip install -e git+https://miha-stopar@github.com/miha-stopar/extract-repetitions#egg=entextractor
+	pip install -e git://github.com/miha-stopar/extract-repetitions#egg=entextractor
 
 
 

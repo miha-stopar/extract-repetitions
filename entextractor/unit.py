@@ -17,7 +17,7 @@ class Unit(object):
         self.irregular = False
         self.label = None
         
-    def __str__(self):
+    def __unicode__(self):
         text = ""
         if self.typ == 0:
             for tag in self.tags:
@@ -27,6 +27,9 @@ class Unit(object):
                 if ind not in self.parent_tag_indices:
                     text += " " + util.text_from_el(tag)
         return text.strip()
+
+    def __str__(self):
+        return unicode(self).encode('utf-8')
     
     def get_tags_interval(self):
         """
