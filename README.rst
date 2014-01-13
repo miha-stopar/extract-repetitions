@@ -1,7 +1,7 @@
 About
 =====
 
-Extractor library provides automatic extraction of repeated entities (sequence of HTML tags) on web pages.
+Extractor library provides automatic extraction of repeated entities (entity - sequence of HTML tags) on web pages. It can be used for example for retrieving news articles as usually all articles come in the same format - for example *div > p a img*.
 
 The library can be used as follows (see *tests* folder):
 ::
